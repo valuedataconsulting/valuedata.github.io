@@ -12,40 +12,21 @@
         <p>Get in touch for a free consultation.</p>
     </header>
     <section>
-<form id="contact-form">
-    <label>Name:</label>
-    <input type="text" name="name" required>
-    
-    <label>Email:</label>
-    <input type="email" name="email" required>
-    
-    <label>Message:</label>
-    <textarea name="message" required></textarea>
-    
-    <button type="submit">Send</button>
+<form
+  action="https://formspree.io/f/xanqglkp"
+  method="POST"
+  enctype="multipart/form-data"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your file:
+    <input type="file" name="upload">
+  </label>
+  <button type="submit">Send</button>
 </form>
-
-<p id="response-message"></p>
-
-<script>
-document.getElementById("contact-form").addEventListener("submit", async function(event) {
-    event.preventDefault();
-    let formData = new FormData(this);
-    
-    let response = await fetch("https://formspree.io/f/xanqglkp", {
-        method: "POST",
-        body: formData,
-        headers: { "Accept": "application/json" }
-    });
-
-    if (response.ok) {
-        document.getElementById("response-message").innerText = "Thank you! Your message has been sent.";
-        this.reset();
-    } else {
-        document.getElementById("response-message").innerText = "Oops! Something went wrong.";
-    }
-});
-</script>
 
     </section>
     <footer>
