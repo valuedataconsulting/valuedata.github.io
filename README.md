@@ -10,4 +10,4 @@ Enterprise Digital Transformation – Helping companies optimize operations with
 AI & Data Science Consulting – Implementing AI models, machine learning pipelines, and big data strategies. 
 Automated Marketing & Growth Hacking – Leveraging AI for customer acquisition, automation, and conversion optimization. 
 Bioinformatics & Medical AI – Analyzing biomedical datasets for research and clinical applications. 
-   💡 We help businesses transform raw data into actionable intelligence, driving efficiency, revenue, and growth.
+💡 We help businesses transform raw data into actionable intelligence, driving efficiency, revenue, and growth.
